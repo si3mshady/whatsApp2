@@ -1,16 +1,35 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.sidebar {
+    color: orange;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.sidebar > button {
+    width:100%;
+    border-top: 1px solid whitesmoke !important;
+    border-bottom: 1px solid whitesmoke !important;
 }
 
-* {
-  box-sizing: border-box;
+.sidebar__header {
+
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 15px;
+    height: 80px;
+    border-bottom: 1px solid whitesmoke
+}
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar__search > input {
+    outline-width: 0;
+    border: none;
+    flex: 1;
 }
